@@ -46,3 +46,6 @@ VALUES
 (50,'明日は目標を達成できるようにする'),
 (51,'おおおおおおおおおおおおおおお'),
 (52,'こんばんはありがとうございました');
+
+--Q4
+UPDATE people SET department_id =4 WHERE department_id IS NULL;
