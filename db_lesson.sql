@@ -49,3 +49,6 @@ VALUES
 
 --Q4
 UPDATE people SET department_id =4 WHERE department_id IS NULL;
+
+--Q5
+SELECT * FROM people WHERE gender = 1 ORDER BY age DESC;
