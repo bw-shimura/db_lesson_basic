@@ -63,3 +63,6 @@ SELECT * FROM people WHERE (age BETWEEN 20 AND 29 AND gender = 2) OR (age BETWEE
 
 --Q8
 SELECT * FROM people WHERE department_id = 1 ORDER BY age ASC;
+
+--Q9
+SELECT AVG(age) AS average_age FROM people WHERE department_id = 2 AND gender =2;
