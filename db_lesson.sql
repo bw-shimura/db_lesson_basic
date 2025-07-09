@@ -52,3 +52,8 @@ UPDATE people SET department_id =4 WHERE department_id IS NULL;
 
 --Q5
 SELECT * FROM people WHERE gender = 1 ORDER BY age DESC;
+
+--Q6
+peopleというテーブルからname,email,ageのカラムを選択
+WHEREを使ってカラムのdepartment_idの値が1のものを絞り込みしレコードを取得する
+created_at作成日時の昇順(ORDER BY)でレコードを並び替え表示
