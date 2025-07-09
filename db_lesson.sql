@@ -60,3 +60,6 @@ created_at作成日時の昇順(ORDER BY)でレコードを並び替え表示
 
 --Q7
 SELECT * FROM people WHERE (age BETWEEN 20 AND 29 AND gender = 2) OR (age BETWEEN 40 AND 49 AND gender = 1) ;
+
+--Q8
+SELECT * FROM people WHERE department_id = 1 ORDER BY age ASC;
