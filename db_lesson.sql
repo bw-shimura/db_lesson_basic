@@ -57,3 +57,6 @@ SELECT * FROM people WHERE gender = 1 ORDER BY age DESC;
 peopleというテーブルからname,email,ageのカラムを選択
 WHEREを使ってカラムのdepartment_idの値が1のものを絞り込みしレコードを取得する
 created_at作成日時の昇順(ORDER BY)でレコードを並び替え表示
+
+--Q7
+SELECT * FROM people WHERE (age BETWEEN 20 AND 29 AND gender = 2) OR (age BETWEEN 40 AND 49 AND gender = 1) ;
