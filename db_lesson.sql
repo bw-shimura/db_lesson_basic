@@ -68,7 +68,7 @@ SELECT * FROM people WHERE department_id = 1 ORDER BY age ASC;
 SELECT AVG(age) AS average_age FROM people WHERE department_id = 2 AND gender =2;
 
 --Q10
-SELECT p.name, p.department_id, r.content FROM people p JOIN reports r USING (person_id);
+SELECT p.name, d.name, r.content FROM people p LEFT JOIN departments d ON p.department_id = d.department_id LEFT JOIN reports r ON p.person_id = r.person_id;
 
 --Q11
 SELECT p.name, p.department_id, r.content FROM people p LEFT OUTER JOIN reports r USING (person_id) WHERE r.content IS NULL;
