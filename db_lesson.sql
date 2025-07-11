@@ -8,7 +8,7 @@ CREATE TABLE departments (
 );
 
 --Q2
-ALTER TABLE people ADD COLUMN department_id INT UNSIGNED;
+ALTER TABLE people ADD COLUMN department_id INT UNSIGNED AFTER email;
 
 --Q3
 INSERT INTO departments(name)
